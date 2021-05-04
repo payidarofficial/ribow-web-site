@@ -1,0 +1,332 @@
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap'); /* 'Quicksand' */
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@200&display=swap'); /* 'Exo', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap'); /* 'Montserrat', sans-serif; */
+
+/* Genel */
+body{
+    background-color: #333;
+    margin: 0;
+}
+*{
+    box-sizing: border-box;
+}
+::selection{
+    background: #F68CB1;
+    color: #EE2C7D;
+}
+::-webkit-scrollbar{
+    background: #F68CB1;
+    width: 5px;
+}
+::-webkit-scrollbar-thumb{
+    background: #EE2C7D;
+}
+
+/* Head */
+.head{
+    background-color: #111;
+    /* border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px; */
+    /* position: sticky;
+    top: 0; */
+    /* z-index: 1;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, .5) */
+}
+.head .flex{
+    display: flex;
+    justify-content: space-between
+}
+.head .flex div{
+    margin: 5px;
+    padding: 9px;
+}
+.head h1{
+    font-family: 'Quicksand', sana-serif;
+    font-weight: bolder;
+    color: white;
+    position: relative;
+    top: 10px;
+}
+.head img{
+    border-radius: 500%;
+    width: 100px;
+    position: relative;
+    top: 40px;
+    left: -35px;
+    box-shadow: 0px 0px 0px 10px #111;
+}
+.head a{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bolder;
+    color: white;
+    text-decoration: none;
+    transition: 250ms all;
+    text-size-adjust: 50px;
+    position: relative;
+    top: 40px;
+}
+.head a:hover{
+    color: #bbb;
+}
+
+/* About */
+.about{
+    margin-top: 50px;
+}
+.about h1{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bolder;
+    color: white;
+    text-align: center;
+}
+.about p{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bolder;
+    color: white;
+    text-align: center;
+}
+.about a{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bolder;
+    color: white;
+    background-color: #111;
+    padding: 10px;
+    border-radius: 10px;
+    transition: 250ms all;
+    text-decoration: none;
+    position: relative;
+    top: 10px;
+}
+.about a:hover{
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, .5)
+}
+
+/* Bot Skill */
+.bot-skill{
+    margin-top: 50px;
+}
+.bot-skill h1{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bolder;
+    text-align: center;
+    color: white;
+}
+.bot-skill .pro{
+    display: flex;
+    justify-content: center;
+}
+.bot-skill .pro div{
+    background-color: #111;
+    padding: 10px;
+    border-radius: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    transition: 250ms all;
+    width: 500px;
+}
+.bot-skill .pro div h1{
+    font-family: 'Exo', sans-serif;
+    font-weight: bolder;
+    color: white;
+    text-align: center;
+}
+.bot-skill .pro div hr{
+    border: none;
+    background: #bbb;
+    opacity: .1;
+    height: 1px;
+}
+.bot-skill .pro div p{
+    font-family: 'Exo', sans-serif;
+    font-weight: bolder;
+    color: white;
+    text-align: center;
+}
+.bot-skill .pro div:hover{
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, .5);
+    transform: translateY(-5px);
+}
+
+/* Premium */
+.premium{
+    margin-top: 50px;
+}
+.premium h1{
+    font-family: 'Exo', sans-serif;
+    font-weight: bolder;
+    color: white;
+    text-align: center;
+}
+.premium .purchase{
+    display: flex;
+    justify-content: space-around;
+}
+.premium .purchase div{
+    background-color: #111;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 10px;
+    transition: 250ms all;
+}
+.premium .purchase img{
+    border-radius: 500%;
+    width: 100px;
+    box-shadow: 0px 0px 0px 10px #111;
+    display: block;
+    margin: 0 auto;
+    margin-top: -40px;
+}
+.premium .purchase hr{
+    border: none;
+    background: #bbb;
+    opacity: .1;
+    height: 1px;
+}
+.premium .purchase h1, p{
+    font-family: 'Exo', sans-serif;
+    font-weight: bolder;
+    color: white;
+    text-align: center;
+}
+.premium .purchase pre{
+    font-family: 'Exo', sans-serif;
+    font-weight: bolder;
+    color: white;
+}
+.premium .purchase span{
+    font-family: 'Exo', sans-serif;
+    font-weight: bolder;
+    color: red;
+    text-align: center;
+    margin-top: -20px;
+    display: block;
+}
+.premium .purchase a{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bolder;
+    color: white;
+    background-color: #F68CB1;
+    padding: 10px;
+    border-radius: 10px;
+    transition: 250ms all;
+    text-decoration: none;
+    display: inline-block;
+}
+.premium .purchase a:hover{
+    background: red;
+}
+.premium .purchase div:nth-child(1) i{
+    color: red;
+}
+.premium .purchase div:nth-child(2) i{
+    color: lime;
+}
+.premium .purchase div:hover{
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, .5);
+    transform: translateY(-5px);
+}
+
+/* Owner */
+.owner{
+    margin-top: 50px;
+}
+.owner h1{
+    font-family: 'Exo', sans-serif;
+    font-weight: bolder;
+    color: white;
+    text-align: center;
+}
+.owner .flex{
+    display: flex;
+    justify-content: center;
+}
+.owner .flex div{
+    margin: 10px;
+    padding: 10px;
+    background-color: #111;
+    border-radius: 10px;
+    margin-top: 30px;
+    width: 500px;
+    transition: 250ms all;
+}
+.owner .flex div hr{
+    border: none;
+    background: #bbb;
+    opacity: .1;
+    height: 1px;
+}
+.owner .flex div img{
+    border-radius: 500%;
+    width: 100px;
+    box-shadow: 0px 0px 0px 10px #111;
+    display: block;
+    margin: 0 auto;
+    margin-top: -40px;
+}
+.owner .flex a{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bolder;
+    color: white;
+    background-color: #111;
+    transition: 250ms all;
+    text-decoration: none;
+    display: inline-block;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.owner .flex i{
+    color: white;
+    transition: 250ms all;
+}
+.owner .flex div:hover{
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, .5);
+    transform: translateY(-5px);
+}
+.owner i:hover{
+    color: #bbb;
+}
+
+/* Footer */
+.footer{
+    margin-top: 30px;
+    background-color: #111;
+    padding: 10px;
+    overflow: hidden;
+}
+.footer span{
+    font-family: 'Exo', sans-serif;
+    font-weight: bolder;
+    color: white;
+    float: left;
+    font-size: 10px;
+}
+.footer .r{
+    float: right;
+}
+.footer .flex{
+    display: flex;
+    justify-content: center;
+}
+.footer hr{
+    border: none;
+    background: #bbb;
+    opacity: .1;
+    height: 1px;
+}
+.footer a{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bolder;
+    /* #F68CB1
+    #EE2C7D */
+    color: white;
+    padding: 3px;
+    font-size: 10px;
+    transition: 250ms all;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 5px;
+}
+.footer a:hover{
+    background: #EE2C7D;
+}
